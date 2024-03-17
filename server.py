@@ -6,9 +6,9 @@ app = Flask(__name__)
 def show_ip():
     ip = request.remote_addr
     reversed_ip = '.'.join(ip.split('.')[::-1])
-    original = f"The original ip is: {ip}\n"
-    reversed = f"\nThe reversed ip is: {reversed_ip}"
-    final = original + reversed
+    originalIp = f"The original ip is: {ip}\n"
+    reversedIp = f"\nThe reversed ip is: {reversed_ip}"
+    final = originalIp + reversedIp
     return final
 
 if __name__ == '__main__':
